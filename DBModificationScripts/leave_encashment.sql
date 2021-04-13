@@ -1,0 +1,4 @@
+
+CREATE TABLE `hrms`.`xin_employee_leave_encashment` ( `encashment_id` INT NOT NULL AUTO_INCREMENT , `company_id` INT NOT NULL , `employee_id` INT NOT NULL , `year_month` INT NOT NULL , `total_days` INT NOT NULL , `amount_per_day` FLOAT(12,2) NOT NULL , `total_amount` FLOAT(12,2) NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `created_by` INT NOT NULL , `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`encashment_id`)) ENGINE = MyISAM;
+ALTER TABLE `xin_employee_leave_encashment` CHANGE `year_month` `month_year` VARCHAR(20) NOT NULL;
+ALTER TABLE `xin_salary_payslips` ADD `total_leave_encashment` FLOAT(13,2) NOT NULL DEFAULT '0' AFTER `total_bonous`;

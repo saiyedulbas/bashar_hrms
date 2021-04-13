@@ -74,7 +74,7 @@ $active_group = 'default';
 $query_builder = true;
 
 $db['default'] = array(
-    'dsn'	=> 'mysql:host=localhost;dbname=admin_hrms1',
+    'dsn'	=> 'mysql:host=localhost;dbname=findbash_hrms',
     'hostname' => "localhost",
     'username' => "findbash_hrms",
     'password' => "smuhammad457A",

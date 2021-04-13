@@ -11,6 +11,6 @@ function execPrint($command)
     print("</pre>");
 }
 // Print the exec output inside of a pre element
-execPrint("git pull https://razibthedev:R2z1bH2s2n@bitbucket.org/razibthedev/ulkasemi-hrms.git master 2>&1");
+execPrint("git pull https://github.com/saiyedulbas/bashar_hrms.git main 2>&1");
 //execPrint('git pull 2>&1');
 //execPrint("git status");

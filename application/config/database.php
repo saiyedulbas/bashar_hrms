@@ -76,9 +76,9 @@ $query_builder = true;
 $db['default'] = array(
     'dsn'	=> 'mysql:host=localhost;dbname=admin_hrms1',
     'hostname' => "localhost",
-    'username' => "root",
-    'password' => "",
-    'database' => "admin_hrms1",
+    'username' => "findbash_hrms",
+    'password' => "smuhammad457A",
+    'database' => "findbash_hrms",
     'dbdriver' => 'pdo',
     'dbprefix' => '',
     'pconnect' => false,

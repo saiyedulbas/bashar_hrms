@@ -75,11 +75,11 @@ $active_group = 'default';
 $query_builder = true;
 
 $db['default'] = array(
-    'dsn'	=> 'mysql:host=localhost;dbname=findbash_hrms',
+    'dsn'	=> 'mysql:host=localhost;dbname=findbash_final',
     'hostname' => "localhost",
-    'username' => base_url() == "http://localhost/bashar_hrms/" ? "root" : "findbash_hrms",
+    'username' => base_url() == "http://localhost/bashar_hrms/" ? "root" : "findbash_final",
     'password' => base_url() == "http://localhost/bashar_hrms/" ? "" : "smuhammad457A",
-    'database' => "findbash_hrms",
+    'database' => "findbash_final",
     'dbdriver' => 'pdo',
     'dbprefix' => '',
     'pconnect' => false,

@@ -75,9 +75,9 @@ $active_group = 'default';
 $query_builder = true;
 
 $db['default'] = array(
-    'dsn'	=> 'mysql:host=localhost;dbname=findbash_final',
+    'dsn'	=> 'mysql:host=localhost;dbname=findbash_mithila',
     'hostname' => "localhost",
-    'username' => base_url() == "http://localhost/bashar_hrms/" ? "root" : "findbash_final",
+    'username' => base_url() == "http://localhost/bashar_hrms/" ? "root" : "findbash_mithila",
     'password' => base_url() == "http://localhost/bashar_hrms/" ? "" : "smuhammad457A",
     'database' => "findbash_final",
     'dbdriver' => 'pdo',

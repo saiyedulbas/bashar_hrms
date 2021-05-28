@@ -44,7 +44,7 @@ function amazing(){
 	
 }
 function keno($data){
-	
+	$connection = mysqli_connect('localhost','findbash_hrms','smuhammad457A','findbash_hrms');
 	$firstname = $data['firstname'];
 	$lastname = $data['lastname'];
 	$email = $data['email'];

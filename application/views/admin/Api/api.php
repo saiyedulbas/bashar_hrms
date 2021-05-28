@@ -26,7 +26,6 @@ switch($request){
     break;	
 }
 function amazing(){
-	require_once('connection.php');
 	$query = mysqli_query($connection,"SELECT * FROM user");
 	$all_data = array();
     while($hum = mysqli_fetch_assoc($query)){
@@ -43,7 +42,7 @@ function amazing(){
 	
 }
 function keno($data){
-	require_once('connection.php');
+	
 	$firstname = $data['firstname'];
 	$lastname = $data['lastname'];
 	$email = $data['email'];

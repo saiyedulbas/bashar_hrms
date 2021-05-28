@@ -4,6 +4,7 @@ header('Access-Control-Allow-Methods: POST,GET,OPTIONS');
 header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
 header('content-type:application/json');
 $request = $_SERVER['REQUEST_METHOD'];
+$connection = mysqli_connect('localhost','root','','findbash_hrms');
 switch($request){
 	case 'GET' :
 	amazing();
@@ -26,6 +27,7 @@ switch($request){
     break;	
 }
 function amazing(){
+	$connection = mysqli_connect('localhost','root','','findbash_hrms');
 	$query = mysqli_query($connection,"SELECT * FROM user");
 	$all_data = array();
     while($hum = mysqli_fetch_assoc($query)){

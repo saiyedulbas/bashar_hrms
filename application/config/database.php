@@ -77,7 +77,7 @@ $query_builder = true;
 $db['default'] = array(
     'dsn'	=> 'mysql:host=localhost;dbname=findbash_hrms',
     'hostname' => "localhost",
-    'username' => base_url() == "http://localhost/bashar_hrms/" ? "root" : "findbash_mithila",
+    'username' => base_url() == "http://localhost/bashar_hrms/" ? "root" : "findbash_hrms",
     'password' => base_url() == "http://localhost/bashar_hrms/" ? "" : "smuhammad457A",
     'database' => "findbash_hrms",
     'dbdriver' => 'pdo',

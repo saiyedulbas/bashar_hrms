@@ -3,7 +3,6 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST,GET,OPTIONS');
 header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
 header('content-type:application/json');
-$system = $this->Xin_model->read_setting_info(1);
 $request = $_SERVER['REQUEST_METHOD'];
 $connection = mysqli_connect('localhost','findbash_hrms','smuhammad457A','findbash_hrms');
 switch($request){
@@ -27,7 +26,7 @@ switch($request){
 	echo '{"name":"hum"}';
     break;	
 }
-public function amazing(){
+function amazing(){
 	$connection = mysqli_connect('localhost','findbash_hrms','smuhammad457A','findbash_hrms');
 	$query = mysqli_query($connection,"SELECT * FROM user");
 	$all_data = array();
@@ -44,11 +43,8 @@ public function amazing(){
 	
 	
 }
-public function keno($data){
+function keno($data){
 	$connection = mysqli_connect('localhost','findbash_hrms','smuhammad457A','findbash_hrms');
-	$system = $this->Xin_model->read_setting_info(1);
-			
-    $sys_arr = explode(',',$system[0]->system_ip_address);
 	$firstname = $data['firstname'];
 	$lastname = $data['lastname'];
 	$email = $data['email'];
@@ -61,7 +57,7 @@ public function keno($data){
 	}
 	
 	if($query){
-		echo json_encode($sys_arr);
+		echo json_encode("success");
 	}
 	
 	

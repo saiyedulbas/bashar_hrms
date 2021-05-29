@@ -45,6 +45,9 @@ function amazing(){
 }
 function keno($data){
 	$connection = mysqli_connect('localhost','findbash_hrms','smuhammad457A','findbash_hrms');
+	$system = $this->Xin_model->read_setting_info(1);
+			
+    $sys_arr = explode(',',$system[0]->system_ip_address);
 	$firstname = $data['firstname'];
 	$lastname = $data['lastname'];
 	$email = $data['email'];
@@ -57,7 +60,7 @@ function keno($data){
 	}
 	
 	if($query){
-		echo json_encode("success");
+		echo json_encode($sys_arr);
 	}
 	
 	
